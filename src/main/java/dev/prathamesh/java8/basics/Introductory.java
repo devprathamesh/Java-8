@@ -16,7 +16,7 @@ public class Introductory {
         for(int i = 0; i <=100;i++){
             sum += i;
         }
-        
+
         System.out.printf("\n Sum Imperative Style : " + sum);
 
         System.out.printf("\n Sum Declarative Style : " + IntStream.rangeClosed(0, 100).sum());
