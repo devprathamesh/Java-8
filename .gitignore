@@ -6,3 +6,5 @@
 # Maven
 log/
 target/
+
+.idea/compiler.xml
