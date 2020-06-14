@@ -1,13 +1,13 @@
 package dev.prathamesh.java8.basics;
 
-import lombok.extern.log4j.Log4j;
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-@Log4j
+@Slf4j
 public class Introductory {
     public static void main(String[] args) {
 
@@ -16,7 +16,7 @@ public class Introductory {
         for(int i = 0; i <=100;i++){
             sum += i;
         }
-
+        
         System.out.printf("\n Sum Imperative Style : " + sum);
 
         System.out.printf("\n Sum Declarative Style : " + IntStream.rangeClosed(0, 100).sum());
