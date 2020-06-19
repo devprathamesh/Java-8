@@ -18,8 +18,8 @@ public class StudentDataBase {
         studentList.add(new Student("John", 6, 3.5, "Male", Arrays.asList("Karat", "Running")));
 
         studentList.add(new Student("Brian", 5, 4.6, "Male", Arrays.asList("Dance", "Karate")));
-        studentList.add(new Student("Susan", 8, 3.9, "Female", Arrays.asList("Skiing", "Jogging")));
-        studentList.add(new Student("Derek", 6, 3.5, "Male", Arrays.asList("Swimming", "Running")));
+        studentList.add(new Student("Susan", 8, 3.1, "Female", Arrays.asList("Skiing", "Jogging")));
+        studentList.add(new Student("Derek", 6, 4.0, "Male", Arrays.asList("Swimming", "Running")));
 
         return studentList;
     }
