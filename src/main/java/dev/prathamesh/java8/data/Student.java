@@ -60,6 +60,10 @@ public class Student {
         this.activities = activities;
     }
 
+    public void printActivites(){
+        System.out.println(this.getActivities());
+    }
+
     @Override
     public String toString() {
         return "Student{" +
