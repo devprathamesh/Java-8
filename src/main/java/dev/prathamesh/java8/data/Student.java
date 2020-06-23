@@ -1,6 +1,5 @@
 package dev.prathamesh.java8.data;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Student {
@@ -9,6 +8,8 @@ public class Student {
     private double gpa;
     private String gender;
     private List<String> activities;
+    
+    private int noOfNotebooks;
 
     public Student(){}
 
@@ -24,7 +25,17 @@ public class Student {
         this.activities = activities;
     }
 
-    public String getName() {
+    public Student(String name, int grade, double gpa, String gender, List<String> activities, int noOfNotebooks) {
+		super();
+		this.name = name;
+		this.grade = grade;
+		this.gpa = gpa;
+		this.gender = gender;
+		this.activities = activities;
+		this.noOfNotebooks = noOfNotebooks;
+	}
+
+	public String getName() {
         return name;
     }
 
@@ -64,7 +75,15 @@ public class Student {
         this.activities = activities;
     }
 
-    public void printActivites(){
+    public int getNoOfNotebooks() {
+		return noOfNotebooks;
+	}
+
+	public void setNoOfNotebooks(int noOfNotebooks) {
+		this.noOfNotebooks = noOfNotebooks;
+	}
+
+	public void printActivites(){
         System.out.println(this.getActivities());
     }
 

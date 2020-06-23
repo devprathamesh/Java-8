@@ -4,6 +4,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
+import dev.prathamesh.java8.data.Student;
+import dev.prathamesh.java8.data.StudentDataBase;
+
 public class StreamReduceExample {
 	
 	private static List<Integer> integerList = Arrays.asList(23, 34, 87, 76, 109, 134, 250);
@@ -23,5 +26,12 @@ public class StreamReduceExample {
 		
 		if(calculateSumWithoutSeed().isPresent())
 			System.out.println("\n Fetch result from Optional : " + calculateSumWithoutSeed().get());
+		
+		System.out.println("Student with highiest GPA " + getHighestGPAStudent());
+	}
+	
+	private static Optional<Student> getHighestGPAStudent(){
+		return StudentDataBase.getStudents().stream().
+		reduce((studentOne, studentTwo) -> studentOne.getGpa() > studentTwo.getGpa() ? studentOne : studentTwo);
 	}
 }
